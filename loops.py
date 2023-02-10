@@ -17,3 +17,10 @@ else: # if the loop doesn't fulfill the if statement in the loop it will show th
     print("We have tried three times")
 
 # Nested Loops
+for x in range(5): # this will be first loop
+    for y in range(3): # pauses first loop to complete its loop
+        print(f"({x}x, {y}y)")
+    if x == 3 and y == 2: # this will check first and second loop and escape if conditions are meet
+        break
+
+# Iterables
