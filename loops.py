@@ -24,3 +24,31 @@ for x in range(5): # this will be first loop
         break
 
 # Iterables
+    # type() function shows what type it is, primitive and complex
+type(5) # int
+type(range(5)) # range 
+
+for x in "Python":
+    print(x)
+
+# While loops = repeat until condition is true
+# number = 100 
+
+# while number > 0:
+#     print(number)
+#     number //= 2
+
+# command = ""
+
+# while command.lower() != "quit":
+#     command = input(">")
+#     print("ECHO", command)
+
+# Infinite loops 
+    # loop that runs forever
+    # break statement  
+while True: # continue until you hit a break
+    command = input(">")
+    print("ECHO", command)
+    if command.lower().strip() == "quit":
+        break  # a way to jump out
