@@ -53,15 +53,15 @@ print(increment(3))
     # touples = (1, 2, 3, 4) collection of objects that are unable to modify
 
 # def multiply(x, y) and you would like to add more arguments than 2
-def multiply(*numbers): # the * will 
-    print(numbers)
-    total = 1
-    for number in numbers: 
-        total *= number # same as total = total * number
-    return total
+# def multiply(*numbers): # the * will 
+#     print(numbers)
+#     total = 1
+#     for number in numbers: 
+#         total *= number # same as total = total * number
+#     return total
 
 
-print(multiply(2, 3, 4, 5))
+# print(multiply(2, 3, 4, 5))
 
 # xxargs 
 
@@ -70,3 +70,36 @@ def save_user(**user): # double ** to pass in objects or dictionary in python
 
 
 save_user(id=1, name="John", age=22)
+
+# Scope 
+    # local = inside function, def greet(name): message = a , name and message
+    # global = variable is outside function can be used anywhere in that file
+        # to modify global variable
+# message = "a" # global
+
+# def hello():
+#     message = "b" # local
+#     global message  # accessing global
+#     message = "b"   # global change
+
+# Debugging 
+    # fn+f9 to add debugger
+    # fn+f5 to start debugger
+    # fn+f10 to continue through
+    # place debugger inside of function giving you problems
+def multiply(*numbers):
+    total = 1
+    for number in numbers:
+        total *= number
+    return total
+
+
+print("Start")
+print(multiply(1, 2, 3))
+
+# Short cut for VSCoding Tricks
+    # to jump from beginning to end of line
+        # fn + arrow of direction wanting to go
+    # to move line up or down 
+        # option + arrow
+        # works with multiple line
