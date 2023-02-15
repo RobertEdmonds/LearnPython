@@ -45,3 +45,29 @@ first, second, *rest = numbers # first and second will be the first two values i
             # still can use square brackets to access the index
 for index, letter in enumerate(letters):
     print(index, ",", letter)
+
+# Adding and Removing Items
+    #Adding
+       # At end of list append method
+letters.append("e")
+        # To add in specific spot insert method
+letters.insert(1, "1")
+
+    # Remove
+        # pop method to remove from end of list
+# print(letters.pop())
+# print(letters)
+        # also use pop method with index of what you want removed
+show = letters.pop(1)
+# print(show)
+print(letters)
+        # remove will remove the first found matching value
+letters.remove("b")
+        # if not in the list it will come back with error
+print(letters)
+        # del method will delete single value or a range
+# del letters[0:3]
+# print(letters)
+        # clear will delete the full list
+letters.clear()
+print(letters)
