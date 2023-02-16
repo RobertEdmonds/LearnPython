@@ -189,3 +189,37 @@ for key, value in point.items():
     print(key, value)
 
 # Dictionary Comprehensions
+values = [x * 2 for x in range(5)]
+    # bottom is the exact same as above
+# for x in range(5):
+#     values.append(x * 2)
+    # to change to set 
+values = {x * 2 for x in range(5)}
+    # to change to dictionary
+values = {x: x * 2 for x in range(5)}
+print(values)
+
+# Generator Expressions
+    # Does not store anything in memory
+    # you can iterate over them
+    # it will create a new item everytime it iterates  
+values = (x*2 for x in range(1000000))
+from sys import getsizeof
+    # to get the size of a object, list, array, ect.
+print(getsizeof(values))
+    # when using () around a comprehensive generated object it will use less bits
+    # can not find the length so you want to know ahead of time the amount your looping through
+
+# Unpacking Operator
+    # same as a spread operator ... = *
+numbers = [1, 2, 3]
+print(*numbers)
+    # helps creating list
+values = [*range(5), *"Hello"]
+print(values)
+    # for dictionaries **
+first = {"x": 1}
+second = {"x": 10, "y": 30}
+combined = {**first, **second, "z": 20}
+    # if keys match it will take the last value being passed
+print(combined)
