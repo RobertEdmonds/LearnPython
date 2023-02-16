@@ -70,4 +70,3 @@ print(letters)
 # print(letters)
         # clear will delete the full list
 letters.clear()
-print(letters)
