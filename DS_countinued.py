@@ -118,3 +118,74 @@ if not queue:
     print("empty")
 
 # Tuples
+    # a read only list
+    # can't modify an existing value
+    # parenthesis is the sign of a tuple
+    # one item add a trailing comma
+        # point = 1,
+    # can concatenate the tuples with + sign
+    # multiple a tuple with *
+    # to convert to a tuple use tuple function
+point = tuple([1,2])
+    # can access tuple by index
+
+# Swapping Variables
+    # switch the variables 
+x = 10
+y = 11
+    # us unpacking
+x, y = y, x
+
+# Arrays
+    # for large data types
+    # import from array
+# from array import array
+
+# numbers = array("i", [1, 2, 3])
+    # method for adding = append for the end and insert for the beginning
+    # method for removing = pop and remove
+# numbers.insert(0, 4)
+# print(numbers)
+
+# Sets 
+    # collection with no duplicate items
+numbers = [1, 2, 1, 3, 4]
+uniques = set(numbers)
+    # {} define a set
+first = set(numbers)
+second = {1, 4}
+second.add(5)   # to add a value
+second.remove(5) # to remove a value
+len(second) # to get a length
+    # to get a union of sets |
+# first | second
+    # to get what are the same use &
+# print(first & second)
+    # to remove the items that match use -
+# print(first - second)
+    # to return items that are in the first and second set but not both
+# print(first ^ second)
+# print(uniques)
+    # can not use index, sets are unordered 
+
+# Dictionaries 
+    # collection of key value pairs
+point = {"x": 1, "y": 2}
+    # can use dict function to convert list to dictionaries
+point = dict(x=1, y=2)
+    # allowed to use index by the key
+point["x"] = 10
+    # this will allow you to add to point
+point["z"] = 30
+print(point)
+    # get method to find value in dict
+print(point.get("a"))
+    # use del to delete a key and value
+    # to loop over dict 
+for key in point:
+    print(key, point[key])
+    # to get tuple values
+for key, value in point.items():
+    print(key, value)
+
+# Dictionary Comprehensions
