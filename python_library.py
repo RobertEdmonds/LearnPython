@@ -39,3 +39,48 @@
     # import sqlite3 
     # import json
     # from pathlib import Path
+
+## Working With Timestamps
+    # import time
+    # time.time()
+    # def send_emails():
+        # for i in range(10000):
+            # pass
+
+## Working With DateTimes 
+    # import datetime
+    # from datetime import datetime
+    # datetime.now()
+    # datetime.strptime("2018/01/01", "%Y/%m/%d")
+
+## Time Deltas
+    # from datetime import datetime, timedelta
+
+## Generation Random Values
+    # check back for random passwords
+    # import random
+        # between 0 and 1
+    # random.randint(1, 10)
+        # can random between two numbers
+    # random.choice({1, 2, 3, 4}, k=2)
+        # randomly chooses items from array or string
+        # k= is how many items to get
+
+## Opening the Browser
+    # import webbrowser
+    # webbrowser.open("http://website.com")
+
+## Sending Emails
+    # from email.mime.multipart import MIMEMultipart
+    # from email.mime.text import MIMEText
+    # import smtplib
+
+## Templates
+    # use html
+
+## Command-line Arguments
+    # import sys
+    # sys.argv
+
+## Running External Programs
+    # import subprocess
